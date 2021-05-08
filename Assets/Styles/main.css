@@ -1,0 +1,296 @@
+/*
+	Young Notes Base Style Sheet
+	
+	Author:		Zach Palmer
+	Date:		4/23/21
+	FileName:	main.css
+	Supporting Files:	
+	
+*/
+
+/*Displays HTML5 structural elements as blocks */
+article, aside, figure, figcaption, footer, hgroup, header,
+section, nav {
+	display: block;
+}
+
+/*Set the default page element styles*/
+body {
+	margin: 0px auto;
+	width: 800px;
+	background-image: linear-gradient(to right, black, grey);
+}
+
+body * {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
+	font-weight: inherit;
+	line-height: 1.2em;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+p {
+	color: white;
+}
+
+aside {
+	width: auto;
+	height: auto;
+	border: 1px solid rgb(255, 153, 51);
+	float: right;
+	
+}
+img.shoreline {
+	max-width:auto;
+	height: auto;
+}
+/*logo*/
+img.logo {
+	max-width:80%;
+	height: auto;
+}
+
+/*Navigation links*/
+nav ul {
+	list-style: none;
+	margin-top: 5px;
+}
+
+nav li {
+	float: left;
+	width: 19%;
+	text-align: center;
+	border: 1px solid rgb(255, 153, 51);
+	margin: 5px 2px 15px 2px;
+}
+
+nav li a {
+	display: block;
+	color: rgb(255, 153, 51);
+	text-decoration: none;
+	background-color: black;
+}
+
+nav li a:hover {
+	color: black;
+	background-color:rgb(255, 153, 51);
+}
+
+/*h1 h2 p*/
+h1 {
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(255, 153, 51);
+	margin-top: 15px;
+}
+
+h2 {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	color: rgb(255, 153, 51);
+	margin-top: 15px;
+}
+
+p {
+	margin: 7px;
+}
+p strong {
+	color: rgb(255, 153, 51);
+}
+#main {
+	border-top: 2px solid rgb(255, 153, 51);
+}
+
+#main ul {
+	list-style-type: circle;
+	margin-left: 50px;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#main ul li {
+	margin-bottom: 10px;
+}
+
+#main ul li strong {
+	font-weight: normal;
+	color: rgb(255, 153, 51);
+}
+/*figcaption formating*/
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+}
+figure {
+	color: rgb(255, 153, 51);
+	border: 1px solid black;
+	width: 450px;
+	padding: 15px;
+}
+figcaption {
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin: 10px auto;
+}
+/*table formating*/
+#tables {
+	margin-top: 20px;
+}
+th:first-child { 
+	vertical-align: bottom;
+	text-align: center;
+}
+th:nth-child(2) {
+	text-align: center;
+}
+tr:nth-child(2) th {
+	text-align: right;
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+th, td {
+	border: 1px solid black;
+	padding: .2em .7em;
+	text-align: right;
+}
+th.left, td.left {
+	text-align: left;
+}
+thead {
+	background-color: black;
+}
+
+/*fieldset styles*/
+fieldset {
+	border: 2px solid black;
+	padding: 2%;
+	margin-bottom: 0.8em;
+}
+legend {
+	font-size: 1.4em;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.submitbutton {
+	border: none;
+	text-align: center;
+}
+.resetbutton {
+	border: none;
+	text-align: center;
+}
+/*field styles*/
+input, textarea {
+	border: 1px solid #777;
+	padding: 0.2em;
+	font-size: 1em;
+}
+.contactinfo input {
+	position: absolute;
+	left: 6em;
+}
+#fnameinput, #lnameinput, #emailinput {
+	width: 20em;
+}
+#phoneinput {
+	width: 12em;
+}
+#feedback {
+	width: 98%;
+	display: block;
+}
+#submit {
+	border: 1px solid rgb(255, 153, 51);
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: rgb(153,153,0);
+	border-radius: 0.5em;
+}
+#reset {
+	border: 1px solid rgb(255, 153, 51);
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: rgb(153,153,0);
+	border-radius: 0.5em;
+}
+/*menu headings*/
+#placeorder {
+	display: block;
+	padding: 15px;
+	font-weight: bold;
+	font-size: 1em;
+}
+#contact {
+	color: silver;
+}
+#select {
+	color: silver;
+}
+#discount {
+	color: silver;
+}
+#info {
+	color: silver;
+}
+#details {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*items*/
+#items {
+	color: rgb(255, 153, 51);
+	display: block;
+}
+/*label styles*/
+label {
+	font-size: 1.2em;
+}
+.contactinfo label {
+	display: block;
+	position: relative;
+	margin: 1em 0;
+	color: rgb(255, 153, 51);
+}
+.membershipinfo label {
+	margin-right: 1em;
+	color: rgb(255, 153, 51);
+}
+footer {
+	color: white;
+	border-top: 2px solid rgb(255, 153, 51);
+	border-bottom: 2px solid rgb(255, 153, 51);
+	clear: all;
+	float: left;
+	width: 100%;
+}
+
+address {
+	font-style: normal;
+	font-size: 10px;
+	text-align: center;
+	padding: 5px;
+}
+
+/*images styles*/
+img.irregularWrap {
+	clear: right;
+	float: right;
+	margin: 0px;
+}

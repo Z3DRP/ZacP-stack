@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<!--
+		Young Notes Websit
+		Author: Zach Palmer, Matthew Brinkmann
+
+		Date: 2/24/21
+		
+		FileName:	.htm
+		Supporting Files:	giovanislogo.png, main.css
+		
+	-->
+	
+		<meta charset="UTF-8" />
+		
+		<title>Order</title>
+		
+		<link href="Assets/Styles/main.css" rel="stylesheet" type="text/css" />
+		
+	</head>
+	
+	<body>
+	
+		<header>
+		<div>
+			<img src="Assets/Images/giovanislogo.png" alt="Giovani's Resturant" class="logo" />
+		</div>
+		</header>
+		
+		<nav class="horizontal">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="menu.htm">Menu</a></li>
+				<li><a href="reviews.htm">Reviews</a></li>
+				<li><a href="https://www.google.com/maps/place/North+St,+Austin,+TX+78756/@30.3224788,-97.7390896,17z/data=!3m1!4b1!4m5!3m4!1s0x8644ca5df8abb985:0x89c7409480dc1324!8m2!3d30.3224742!4d-97.7369009">Locations</a></li>
+				<li><a href="order.htm">Place Order</a></li>
+			</ul>
+		</nav>
+		<audio autoplay>
+			<source src="Assets/Audio/osole.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<section id="main">
+			<article id="contentstart">
+            <h2 id="placeorder">Place order</h2>
+			<p class="form-instructions">All fields are required</p>
+			   <form>
+			      <fieldset class="contactinfo">
+				     <legend id="contact">Contact Information</legend>
+					 <label for="fnameinput">
+					    First Name
+						<input type="text" id="fnameinput" name="fname" placeholder="First Name" required>
+					 </label>
+					 <label for="lnameinput">
+					    Last Name
+						<input type="text" id="lnameinput" name="lname" placeholder="Last Name" required>
+					 </label>
+					 <label for="emailinput">
+					    Email
+						<input type="email" id="emailinput" name="email" placeholder="address@example.com" required>
+					 </label>
+					 <label for="phoneinput">
+					    Phone
+						<input type="tel" id="phoneinput" name="phone" placeholder="###-###-####" required>
+					 </label>
+					 
+				  </fieldset>
+				  <fieldset class="itemselect">
+				     <legend id="select">Select Item(s)</legend>
+						<div id="items">
+							<input type="checkbox" name="item" id="item1" value="tagliatelle">
+							<label for="item1">Tagliatelle</label><br>
+							<input type="checkbox" name="item" id="item2" value="pappardelle">
+							<label for="item2">Pappardelle</label><br>
+							<input type="checkbox" name="item" id="item3" value="Risotto">
+							<label for="item3">Risotto</label><br>
+							<input type="checkbox" name="item" id="item4" value="gnocchi">
+							<label for="item4">Gnocchi</label><br>
+							<input type="checkbox" name="item" id="item5" value="focaccia">
+							<label for="item5">Focaccia</label><br>
+						
+						
+							<input type="checkbox" name="item" id="item6" value="spaghetii">
+							<label for="item6">Spaghetii</label><br>
+							<input type="checkbox" name="item" id="item7" value="lasange">
+							<label for="item7">Lasange</label><br>
+							<input type="checkbox" name="item" id="item8" value="alfredo">
+							<label for="item8">Alfredo</label><br>
+							<input type="checkbox" name="item" id="item9" value="linguini">
+							<label for="item9">Linguini</label><br>
+							<input type="checkbox" name="item" id="item10" value="pizza">
+							<label for="item10">Pizza</label><br>
+						</div>
+						
+						
+				  </fieldset>
+				  <fieldset class="membershipinfo">
+				     <legend id="discount">Special Discounts</legend>
+					 <label for="student">
+					    <input type="checkbox" id="student" name="memberships" value="Student">
+						Student
+					 </label>
+					 <label for="senior">
+					    <input type="checkbox" id="senior" name="memberships" value="Senior">
+						Senior
+					 </label>
+				  </fieldset>
+				  <fieldset class="additionalinfo">
+				     <legend id="info">Order Information</legend>
+					 <label for="details">
+			
+						<textarea id="details" name="details" rows="7" placeholder="Order Size and other Information" required></textarea>
+					 </label>
+				  </fieldset>
+				  <fieldset id="sub" class="submitbutton">
+				     <input type="button" id="submit" value="Submit" onclick="getvalue()">
+				  </fieldset>
+				  <fieldset class="resetbutton">
+					<input type="reset" id="reset" value="reset">
+				  </fieldset>
+			</form>
+         </article>
+			
+		</section>
+		<script src="Assets/JavaScript/script.js"></script>
+		<footer>
+			<address>
+				Giovani's &#183;
+				211 North Street&#183;
+				Austin,Tx 78756 &#183;
+				(210) 575-0177 &#183;
+				info@GiovanisResturant.com
+			</address>
+		</footer>
+		
+	</body>
+	
+</html>
+				

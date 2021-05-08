@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<!--
+		Young Notes Websit
+		Author: Zach Palmer
+		Date: 2/24/21
+		
+		FileName:	.htm
+		Supporting Files:	giovanislogo.png, main.css
+		
+	-->
+	
+		<meta charset="UTF-8" />
+		
+		<title>template</title>
+		
+		<link href="Assets\Styles\main.css" rel="stylesheet" type="text/css" />
+		
+	</head>
+	
+	<body>
+	
+		<header>
+			<img src="Assets\Images\giovanislogo.jpg" alt="Giovani's Resturant" />
+		</header>
+		
+		<nav class="horizontal">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="menu.htm">Menu</a></li>
+				<li><a href="staff.htm">Reviews</a></li>
+				<li><a href="locations.htm">Locations</a></li>
+				<li><a href="order.htm">Place Order</a></li>
+			</ul>
+		</nav>
+		
+		<section id="main">
+		
+			<h1>template</h1>
+			<article id="contentstart">
+            <h2>Your form has been submitted</h2>
+            <h3>You entered the following data:</h3>
+         
+               <script>
+                   var formData = location.search;
+                   formData = formData.substring(1, formData.length);
+                   while (formData.indexOf("+") !== -1) {
+                      formData = formData.replace("+", " ");
+                   }
+                   formData = decodeURIComponent(formData);
+                   var formArray = formData.split("&");
+                   for (var i = 0; i < formArray.length; i = i + 1) {
+                      document.write("<p>" + formArray[i] + "</p>");
+                   }
+               </script>
+         </article>
+			
+		</section>
+		
+		<footer>
+			<address>
+				Giovani's &#183;
+				211 North Avenue &#183;
+				Brentwood, Tn 38028 &#183;
+				(423) 575-0177 &#183;
+				info@GiovanisResturant.com
+			</address>
+		</footer>
+		
+	</body>
+	
+</html>
+				

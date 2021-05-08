@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<!--
+		Young Notes Websit
+		Author: Zach Palmer, Matthew Brinkmann, Jacyln McElroy
+		
+		Date: 2/24/21
+		
+		FileName:	.htm
+		Supporting Files:	giovanislogo.png, main.css
+		
+	-->
+	
+		<meta charset="UTF-8" />
+		
+		<title>Reviews</title>
+		
+		<link href="Assets/Styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="Assets/Styles/rstyles.css" rel="stylesheet" type="text/css" />
+		
+	</head>
+	
+	<body>
+	
+		<header>
+		<div>
+			<img src="Assets/Images/giovanislogo.png" alt="Giovani's Resturant" class="logo" />
+		</div>
+		</header>
+		
+		<nav class="horizontal">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="menu.htm">Menu</a></li>
+				<li><a href="reviews.htm">Reviews</a></li>
+				<li><a href="https://www.google.com/maps/place/North+St,+Austin,+TX+78756/@30.3224788,-97.7390896,17z/data=!3m1!4b1!4m5!3m4!1s0x8644ca5df8abb985:0x89c7409480dc1324!8m2!3d30.3224742!4d-97.7369009">Locations</a></li>
+				<li><a href="order.htm">Place Order</a></li>
+			</ul>
+		</nav>
+		<audio autoplay>
+			<source src="Assets/Audio/osole.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<section id="main">
+		
+			<h1>Reviews</h1>
+			<aside>
+			<img src="Assets/Images/foodie.png" alt="" class="" />
+			<h1>Best Foodie Award 2010</h1>
+			
+			<img src="Assets/Images/pizzaward.jpg" alt="" class="" />
+			<h1>Best Pizza Award 2010 2011 2012 2014</h1>
+			
+			<img src="Assets/Images/bestrest.jpg" alt="" class="" />
+			<h1>Best Resturant Award Of Excellence 2014</h1>
+			
+			<img src="Assets/Images/chef.jpg" alt="" class="" />
+			<h1>Best Chef in Texas 2019</h1>
+			</aside>
+			
+			<h2>Colin from Autin Texas</h2>
+			<p>"I've been coming here for years and I've never had a bad experience. Best pizza in the city!"
+			<h2>Travis from San Antonio Texas</h2>
+			<p>"My wife and I came here for our anniversary. The pasta was amzaing! We will definitely be back!"</p>
+			<h2>Jamie from St. Louis Missouri</h2>
+			<p>I come here a couple times a year to visit family and always make sure to stop in for their pizza.
+			I love the atmosphere and they always have such a friendly staff</p>
+			<h2>Alex from Dallas Texas</h2>
+			<p>One of my favorite restaurants! 5 stars all around! The restaurant is beautiful and the staff is always very friendly.
+			We have never had a bad meal! True authentic Italian! You can taste the fresh ingredients in every bite.</p>
+		</section>
+		      <article id="contentstart">
+         <h2>Contact Us</h2>
+         <form>
+            <p class="form-instructions">All fields are required</p>
+            <fieldset class="contactinfo">
+               <label for="fnameinput">
+                  First Name
+                  <input type="text" name="fname" id="fnameinput" required>
+               </label>
+			   <label for="lnameinput">
+                  Last Name
+                  <input type="text" name="lname" id="lnameinput" required>
+               </label>
+               <label for="emailinput">
+                  Email
+                  <input type="email" name="email" id="emailinput" placeholder="address@example.com" required>
+               </label>
+			   <label for="phoneinput">
+					Phone
+					<input type="tel" id="phoneinput" name="phone" placeholder="###-###-####" required>
+				</label>
+            </fieldset>
+            <fieldset class="additionalinfo">
+               <label for="other-info">
+                  Leave Us A Review
+                  <textarea name="other-info" id="other-info" rows="5" cols="50" required></textarea>
+               </label>
+            </fieldset>
+			<fieldset class="newsletter">
+				<legend id="news">Get newsletter</legend>
+				<label for="checkbox1">
+					Please send me monthly newsletter
+					<input type="checkbox" id="checkbox1" name="checkbox1">
+				</label>
+			</fieldset>
+            <fieldset class="submitbutton">
+               <input type="button" id="submit" value="send" onclick="sendinfo()">
+            </fieldset>
+			<fieldset class="resetbutton">
+				<input type="reset" id="reset" value="Reset" onclick="refreshpage()">
+			</fieldset>
+         </form>
+      </article>
+		<script src="Assets/JavaScript/script.js"></script>
+		<footer>
+			<address>
+				Giovani's &#183;
+				211 North Street &#183;
+				Austin, Tx 78756 &#183;
+				(210) 575-0177 &#183;
+				info@GiovanisResturant.com
+			</address>
+		</footer>
+		
+	</body>
+	
+</html>
+				

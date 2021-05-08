@@ -1,0 +1,22 @@
+
+
+
+
+aside {
+	display: block;
+	width: 400px;
+	float: right;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 5px 0px 20px 20px
+}
+
+aside img {
+	float: auto;
+	margin: 5px;
+}
+
+aside {
+	height: 250px;
+	overflow: auto;
+}
